@@ -1,0 +1,16 @@
+PODS:
+  - HSPAnalytics (0.1.0)
+
+DEPENDENCIES:
+  - HSPAnalytics (from `../`)
+
+EXTERNAL SOURCES:
+  HSPAnalytics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HSPAnalytics: ff2d77a7ad89120d298091b55d1006055da398fb
+
+PODFILE CHECKSUM: 6203d5954691b786f5ee0577b63217dbd3450ca4
+
+COCOAPODS: 1.16.2

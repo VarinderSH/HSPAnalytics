@@ -1,0 +1,6 @@
+framework module HSPAnalytics {
+  umbrella header "HSPAnalytics-umbrella.h"
+
+  export *
+  module * { export * }
+}
