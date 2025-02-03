@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSPAnalytics'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of HSPAnalytics.'
+  s.version          = '1.0.0'
+  s.summary          = 'HSPAnalytics is provided by HSPPhoenix Pvt Ltd, this is basically used for app events.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,8 +31,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 #s.ios.deployment_target = '9.3'
 
-  s.source_files = 'HSPAnalytics/Classes/**/*'
-  
+#  s.source_files = 'HSPAnalytics/Classes/**/*'
+s.source_files = 'HSPAnalytics/Classes/**/*.swift'
+
   # s.resource_bundles = {
   #   'HSPAnalytics' => ['HSPAnalytics/Assets/*.png']
   # }

@@ -12,9 +12,9 @@
 		2F8C2B6AD8261C0C1C38B149F193E1BA /* Pods-HSPAnalytics_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E61F11250F34444E7D5DBAB60689311 /* Pods-HSPAnalytics_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		565E833E104751C78854B6B40F299319 /* Pods-HSPAnalytics_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B415F771B352C1968519294BC6BDAF9 /* Pods-HSPAnalytics_Example-dummy.m */; };
 		7381E02F30D245CA6F0943A1D1FC3A7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		84DC96882D50D29C00F8D4A6 /* EvenLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96872D50D29C00F8D4A6 /* EvenLogger.swift */; };
-		84DC968A2D50D2AE00F8D4A6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96892D50D2AE00F8D4A6 /* APIClient.swift */; };
-		84DC968C2D50D2D900F8D4A6 /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC968B2D50D2D900F8D4A6 /* EventRequest.swift */; };
+		84DC96902D50DAC600F8D4A6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC968D2D50DAC600F8D4A6 /* APIClient.swift */; };
+		84DC96912D50DAC600F8D4A6 /* EvenLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC968E2D50DAC600F8D4A6 /* EvenLogger.swift */; };
+		84DC96922D50DAC600F8D4A6 /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC968F2D50DAC600F8D4A6 /* EventRequest.swift */; };
 		B62E9A898E310467BFBC1EC4054B7955 /* HSPAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 852018F19B8E598736C6A1C55167D5B9 /* HSPAnalytics-dummy.m */; };
 		BD82FC39C3699445054E7D70A17A680D /* HSPAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBECD1223FDE7DAB571B1CE6EE503CA /* HSPAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1AD75BFDCD39E0A443BE2649C8FCE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
@@ -52,9 +52,9 @@
 		691B4DC8EC8DA1DD0E742E49759BE893 /* Pods-HSPAnalytics_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSPAnalytics_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		75722603DCD32B3194EC3E512EDC38F9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods_HSPAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSPAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84DC96872D50D29C00F8D4A6 /* EvenLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenLogger.swift; sourceTree = "<group>"; };
-		84DC96892D50D2AE00F8D4A6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		84DC968B2D50D2D900F8D4A6 /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
+		84DC968D2D50DAC600F8D4A6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = HSPAnalytics/Classes/APIClient.swift; sourceTree = "<group>"; };
+		84DC968E2D50DAC600F8D4A6 /* EvenLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EvenLogger.swift; path = HSPAnalytics/Classes/EvenLogger.swift; sourceTree = "<group>"; };
+		84DC968F2D50DAC600F8D4A6 /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventRequest.swift; path = HSPAnalytics/Classes/EventRequest.swift; sourceTree = "<group>"; };
 		852018F19B8E598736C6A1C55167D5B9 /* HSPAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSPAnalytics-dummy.m"; sourceTree = "<group>"; };
 		852B3B52C04FB0876519B67EDE3851A9 /* Pods-HSPAnalytics_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSPAnalytics_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8B415F771B352C1968519294BC6BDAF9 /* Pods-HSPAnalytics_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSPAnalytics_Example-dummy.m"; sourceTree = "<group>"; };
@@ -144,9 +144,9 @@
 		B7D57CEB49CBE2D2C4FBABCFEE857333 /* HSPAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				84DC96892D50D2AE00F8D4A6 /* APIClient.swift */,
-				84DC96872D50D29C00F8D4A6 /* EvenLogger.swift */,
-				84DC968B2D50D2D900F8D4A6 /* EventRequest.swift */,
+				84DC968D2D50DAC600F8D4A6 /* APIClient.swift */,
+				84DC968E2D50DAC600F8D4A6 /* EvenLogger.swift */,
+				84DC968F2D50DAC600F8D4A6 /* EventRequest.swift */,
 				05E8A6D8AA4C4168D0DC2589C4FB2F62 /* Pod */,
 				C82B5626CC27157B75FDAC74730DB942 /* Support Files */,
 			);
@@ -378,10 +378,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DC968C2D50D2D900F8D4A6 /* EventRequest.swift in Sources */,
+				84DC96902D50DAC600F8D4A6 /* APIClient.swift in Sources */,
+				84DC96912D50DAC600F8D4A6 /* EvenLogger.swift in Sources */,
+				84DC96922D50DAC600F8D4A6 /* EventRequest.swift in Sources */,
 				B62E9A898E310467BFBC1EC4054B7955 /* HSPAnalytics-dummy.m in Sources */,
-				84DC96882D50D29C00F8D4A6 /* EvenLogger.swift in Sources */,
-				84DC968A2D50D2AE00F8D4A6 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
