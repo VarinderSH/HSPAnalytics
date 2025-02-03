@@ -1,0 +1,22 @@
+{
+  "name": "HSPAnalytics",
+  "version": "0.1.0",
+  "summary": "A short description of HSPAnalytics.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/VarinderSH/HSPAnalytics",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "VarinderSH": "varindersh@hsphoenix.com"
+  },
+  "source": {
+    "git": "https://github.com/VarinderSH/HSPAnalytics.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "HSPAnalytics/Classes/**/*"
+}

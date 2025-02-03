@@ -1,0 +1,6 @@
+use_frameworks!
+target 'HSPAnalytics_Tests' do
+  pod 'HSPAnalytics', :path => '../'
+  
+  
+end
