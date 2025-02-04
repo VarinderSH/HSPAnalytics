@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HSPAnalytics'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A lightweight analytics tracking library.'
   s.description      = 'HSPAnalytics is a simple analytics library that allows event tracking in iOS applications with minimal setup.'
 
