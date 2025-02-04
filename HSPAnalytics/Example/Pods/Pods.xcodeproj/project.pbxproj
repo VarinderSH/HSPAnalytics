@@ -23,9 +23,9 @@
 		76085620117E839C450E794DB3773D79 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		766F6429966FBFF2E2E6A2991BDAFDA9 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		7CA66236CDA347ACA342DBCAA0F75C7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692D29656528FA94A71ECFB8FEB6DC0B /* Foundation.framework */; };
-		84DC96A52D52109F00F8D4A6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96A22D52109F00F8D4A6 /* APIClient.swift */; };
-		84DC96A62D52109F00F8D4A6 /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96A32D52109F00F8D4A6 /* EventRequest.swift */; };
-		84DC96A72D52109F00F8D4A6 /* HSPAnalytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96A42D52109F00F8D4A6 /* HSPAnalytic.swift */; };
+		84DC96AC2D521EB300F8D4A6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96A92D521EB300F8D4A6 /* APIClient.swift */; };
+		84DC96AD2D521EB300F8D4A6 /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96AA2D521EB300F8D4A6 /* EventRequest.swift */; };
+		84DC96AE2D521EB300F8D4A6 /* HSPAnalytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DC96AB2D521EB300F8D4A6 /* HSPAnalytic.swift */; };
 		8FD1AB468AF7F87112C3674006F6BC6E /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		AEFB700F9EE77EE9848A8AC8C3F00A7F /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		B62E9A898E310467BFBC1EC4054B7955 /* HSPAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 852018F19B8E598736C6A1C55167D5B9 /* HSPAnalytics-dummy.m */; };
@@ -102,9 +102,9 @@
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods_HSPAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSPAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C8D5E4E8AEE017C9192FBA18CC4852 /* Pods-HSPAnalytics_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSPAnalytics_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		84DC96A22D52109F00F8D4A6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = ../APIClient.swift; sourceTree = "<group>"; };
-		84DC96A32D52109F00F8D4A6 /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventRequest.swift; path = ../EventRequest.swift; sourceTree = "<group>"; };
-		84DC96A42D52109F00F8D4A6 /* HSPAnalytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HSPAnalytic.swift; path = ../HSPAnalytic.swift; sourceTree = "<group>"; };
+		84DC96A92D521EB300F8D4A6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		84DC96AA2D521EB300F8D4A6 /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
+		84DC96AB2D521EB300F8D4A6 /* HSPAnalytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSPAnalytic.swift; sourceTree = "<group>"; };
 		852018F19B8E598736C6A1C55167D5B9 /* HSPAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSPAnalytics-dummy.m"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		89F2235CC5A43C0A937ED4A4C60F72EC /* Pods-HSPAnalytics_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HSPAnalytics_Example.modulemap"; sourceTree = "<group>"; };
@@ -266,9 +266,9 @@
 		84DC96A82D521D7200F8D4A6 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				84DC96A22D52109F00F8D4A6 /* APIClient.swift */,
-				84DC96A32D52109F00F8D4A6 /* EventRequest.swift */,
-				84DC96A42D52109F00F8D4A6 /* HSPAnalytic.swift */,
+				84DC96A92D521EB300F8D4A6 /* APIClient.swift */,
+				84DC96AA2D521EB300F8D4A6 /* EventRequest.swift */,
+				84DC96AB2D521EB300F8D4A6 /* HSPAnalytic.swift */,
 			);
 			path = source;
 			sourceTree = "<group>";
@@ -499,6 +499,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					8AC1D6D41A1FA68F0DC242066E0F06B1 = {
+						LastSwiftMigration = 1620;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -558,9 +563,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B62E9A898E310467BFBC1EC4054B7955 /* HSPAnalytics-dummy.m in Sources */,
-				84DC96A52D52109F00F8D4A6 /* APIClient.swift in Sources */,
-				84DC96A62D52109F00F8D4A6 /* EventRequest.swift in Sources */,
-				84DC96A72D52109F00F8D4A6 /* HSPAnalytic.swift in Sources */,
+				84DC96AC2D521EB300F8D4A6 /* APIClient.swift in Sources */,
+				84DC96AD2D521EB300F8D4A6 /* EventRequest.swift in Sources */,
+				84DC96AE2D521EB300F8D4A6 /* HSPAnalytic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +629,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 25F3AC380F85AEFF8D1522DA4EA9BF27 /* Pods-HSPAnalytics_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -694,7 +698,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 225528A270EC9889C0BC066349F5004A /* Pods-HSPAnalytics_Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -729,7 +732,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EFB28013F5B2A8440E902058086A30C7 /* Pods-HSPAnalytics_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -799,7 +801,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06937071BF70FE82B3C7DE1057FB2DEF /* Pods-HSPAnalytics_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -896,6 +897,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44837DFEEB321511A765136E85E0D894 /* HSPAnalytics.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -920,6 +922,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -931,6 +934,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3E466D30893EE2C27119EA5CC3C3306 /* HSPAnalytics.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
