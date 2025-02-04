@@ -11,15 +11,11 @@ Pod::Spec.new do |s|
   s.version          = '1.0.1'
   s.summary          = 'A lightweight analytics tracking library.'
   s.description      = 'HSPAnalytics is a simple analytics library that allows event tracking in iOS applications with minimal setup.'
-
   s.homepage         = 'https://github.com/VarinderSH/HSPAnalytics'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'VarinderSH' => 'varindersh@hsphoenix.com' }
   s.source           = { :git => 'https://github.com/VarinderSH/HSPAnalytics.git', :tag => s.version }
-
   s.ios.deployment_target = '12.0'
-  s.source_files = 'HSPAnalytics/Classes/**/*.swift'
+  s.source_files = 'HSPAnalytics/HSPAnalytics/Classes/**/*.swift'
   s.swift_versions   = ['5.0']
-
-
 end
