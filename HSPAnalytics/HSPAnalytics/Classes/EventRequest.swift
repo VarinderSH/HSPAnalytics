@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public enum EventType: String {
     case appCrash = "APP_CRASH"
     case appLaunch = "APP_LAUNCH"

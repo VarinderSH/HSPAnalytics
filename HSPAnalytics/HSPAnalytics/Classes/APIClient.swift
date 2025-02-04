@@ -10,20 +10,24 @@ import Foundation
 
 
 class APIClient {
-    static let shared = APIClient()
         
-    private init() {}
+    var baseURL: String
     
-    func sendEvent(event: EventRequest, completion: @escaping (Bool) -> Void) {
+    init(baseURL: String) {
+        self.baseURL = baseURL
+    }
+    
+    func sendEvent(event: EventRequest, headers: [String: String], completion: @escaping (Bool) -> Void) {
         guard let url = URL(string: baseURL) else {
             completion(false)
             return
         }
-        
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
+        headers.forEach { element in
+            request.addValue(element.value, forHTTPHeaderField: element.key)
+        }
         if let jsonData = event.toJSONData() {
             request.httpBody = jsonData
             let task = URLSession.shared.dataTask(with: request) { _, response, error in

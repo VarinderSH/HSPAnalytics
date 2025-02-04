@@ -1,20 +1,51 @@
 //
-//  EvenLogger.swift
+//  HSPAnalytic.swift
 //  hsp-analytics
 //
 //  Created by Admin on 2/3/25.
 //
 
 import Foundation
-import Foundation
 
-public class EventLogger {
-    public static let shared = EventLogger()
+public struct AnalyticConfig {
+    public let api: String
+    public let orgToken: String
+    // Public initializer to allow access from other modules
+    public init(api: String, orgToken: String) {
+        self.api = api
+        self.orgToken = orgToken
+    }
+}
+
+public class HSPAnalytic {
+    
+    private var config: AnalyticConfig?
+    
+    public static let shared = HSPAnalytic()
+    
+    private var apiClient: APIClient?
+    
+    private init() { }
+    
+    private var headers: [String: String]? {
+        guard let orgToken = config?.orgToken else { return nil }
+        return ["orgToken": orgToken]
+    }
+    
+    public func startAyalytic(config: AnalyticConfig) {
+        self.config = config
+        setupClient()
+    }
+    
+    private func setupClient() {
+        guard let config = self.config else { return }
+        self.apiClient = APIClient(baseURL: config.api)
+    }
     
     // Generic event logging function
     public func logEvent(eventType: EventType, eventData: [String: Any]) {
         let event = EventRequest(eventType: eventType, eventData: eventData)
-        APIClient.shared.sendEvent(event: event) { success in
+        apiClient?.sendEvent(event: event, headers: headers ?? [:]) { success in
             if success {
                 print("Event logged successfully: \(eventType.rawValue)")
             } else {
