@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/VarinderSH/HSPAnalytics.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.0'
-  s.swift_versions   = ['5.0']
-  s.source_files = 'source/**/*.swift'
+  s.source_files = 'HSPAnalytics/Classes/**/*'
 
 end

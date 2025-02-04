@@ -1,8 +1,8 @@
 {
   "name": "HSPAnalytics",
-  "version": "0.1.0",
-  "summary": "A short description of HSPAnalytics.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "A lightweight analytics tracking library.",
+  "description": "HSPAnalytics is a simple analytics library that allows event tracking in iOS applications with minimal setup.",
   "homepage": "https://github.com/VarinderSH/HSPAnalytics",
   "license": {
     "type": "MIT",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/VarinderSH/HSPAnalytics.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
   "source_files": "HSPAnalytics/Classes/**/*"
 }

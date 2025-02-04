@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HSPAnalytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
