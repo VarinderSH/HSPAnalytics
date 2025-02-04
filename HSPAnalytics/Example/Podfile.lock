@@ -1,16 +1,27 @@
 PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
   - HSPAnalytics (0.1.0)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
   - HSPAnalytics (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   HSPAnalytics:
     :path: "../"
 
 SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   HSPAnalytics: ff2d77a7ad89120d298091b55d1006055da398fb
 
-PODFILE CHECKSUM: 6203d5954691b786f5ee0577b63217dbd3450ca4
+PODFILE CHECKSUM: 2b4976a4e610fe1380c2d88f2bef0ed83650143e
 
 COCOAPODS: 1.16.2

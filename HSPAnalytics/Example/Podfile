@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'HSPAnalytics_Example' do
   pod 'HSPAnalytics', :path => '../'
@@ -8,6 +8,6 @@ target 'HSPAnalytics_Example' do
   target 'HSPAnalytics_Tests' do
     inherit! :search_paths
 
-    
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
   end
 end

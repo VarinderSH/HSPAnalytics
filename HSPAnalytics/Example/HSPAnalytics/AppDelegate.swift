@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HSPAnalytics
 //
-//  Created by VarinderSH on 02/03/2025.
+//  Created by VarinderSH on 02/04/2025.
 //  Copyright (c) 2025 VarinderSH. All rights reserved.
 //
 
@@ -13,14 +13,10 @@ import HSPAnalytics
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let orgToken = "eyJvcmdJZCI6IDY2ODQyMiwgImVudiI6ICJQcm9kdWN0aW9uIiwgImNsaWVudElkIjogImU2YjhhYzUzLThhMGEtNGJmYS1iYjdlLTEzZTYzMjE3YTkxZiIsICJjbGllbnRTZWNyZXQiOiAiMTQ5YWQ3MDUtODM3ZC00NjhkLTg1M2YtMDQ3NzI4YTg1NzNhIiwgInZlcnNpb24iOiAidjEifQ=="
-    let api = "https://hsp-analytic-kwdph.ondigitalocean.app/hsp-analytic-v2/hsp-event"
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let config = AnalyticConfig(api: api, orgToken: orgToken)
-        HSPAnalytic.shared.startAyalytic(config: config)
-//        EventLogger.shared.logEvent(eventType: .screenView, eventData: [:])
         return true
     }
 

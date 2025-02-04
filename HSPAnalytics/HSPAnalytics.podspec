@@ -9,36 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = 'HSPAnalytics'
   s.version          = '1.0.0'
-  s.summary          = 'HSPAnalytics is provided by HSPPhoenix Pvt Ltd, this is basically used for app events.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.summary          = 'A lightweight analytics tracking library.'
+  s.description      = 'HSPAnalytics is a simple analytics library that allows event tracking in iOS applications with minimal setup.'
 
   s.homepage         = 'https://github.com/VarinderSH/HSPAnalytics'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'VarinderSH' => 'varindersh@hsphoenix.com' }
   s.source           = { :git => 'https://github.com/VarinderSH/HSPAnalytics.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-#s.ios.deployment_target = '9.3'
-
-#  s.source_files = 'HSPAnalytics/Classes/**/*'
-s.source_files = 'HSPAnalytics/Classes/**/*.swift'
-
-  # s.resource_bundles = {
-  #   'HSPAnalytics' => ['HSPAnalytics/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '12.0'
+  s.swift_versions   = ['5.0']
+  s.source_files = 'HSPAnalytics/Classes/**/*'
 end
