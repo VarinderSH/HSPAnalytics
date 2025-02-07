@@ -15,6 +15,7 @@
 		48A8CEC2E4E7BB02EB02F7D197904D28 /* HSPAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 584A2220DB5751949E071E76A3847835 /* HSPAnalytics-dummy.m */; };
 		565E833E104751C78854B6B40F299319 /* Pods-HSPAnalytics_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B415F771B352C1968519294BC6BDAF9 /* Pods-HSPAnalytics_Example-dummy.m */; };
 		80AEC01D3D7F7A9301677852F2998461 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC52396CEBE535F6D17513A2D44195AB /* APIClient.swift */; };
+		84180C4E2D528C4300F8F1C5 /* EventDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84180C4D2D528C4300F8F1C5 /* EventDataModel.swift */; };
 		B0B7FB838C42F39B7AD69570A3CFBE1B /* HSPAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44A39C20DDAF6016072D397C1D406E52 /* HSPAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1AD75BFDCD39E0A443BE2649C8FCE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		D6E7A9A30748DE6FA737F66A9D55885F /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAE7EC0786C18F36E3CFFAE317E696 /* EventRequest.swift */; };
@@ -40,8 +41,8 @@
 
 /* Begin PBXFileReference section */
 		0540FEF6474562C6E33319A3FA7F8DAF /* HSPAnalytics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HSPAnalytics-Info.plist"; sourceTree = "<group>"; };
-		0BC613DBF1A165C8C193E7F3CA19FA97 /* Pods-HSPAnalytics_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HSPAnalytics_Tests"; path = Pods_HSPAnalytics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0F624CE8C8E6D2F000F79F39C44F18B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0BC613DBF1A165C8C193E7F3CA19FA97 /* Pods_HSPAnalytics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSPAnalytics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F624CE8C8E6D2F000F79F39C44F18B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1E61F11250F34444E7D5DBAB60689311 /* Pods-HSPAnalytics_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSPAnalytics_Example-umbrella.h"; sourceTree = "<group>"; };
 		260C63085A6A61AC2BC51B1566F05848 /* HSPAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSPAnalytics-prefix.pch"; sourceTree = "<group>"; };
 		2C7A1FBB5EE2F06C37E1EF5C8F9451D9 /* Pods-HSPAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSPAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,20 +51,21 @@
 		44A39C20DDAF6016072D397C1D406E52 /* HSPAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HSPAnalytics-umbrella.h"; sourceTree = "<group>"; };
 		459A01DB3F744F4581660B72E7741FE7 /* Pods-HSPAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSPAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		48DAE7EC0786C18F36E3CFFAE317E696 /* EventRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventRequest.swift; path = HSPAnalytics/Classes/EventRequest.swift; sourceTree = "<group>"; };
-		49F257BA71BDB0510E40C7CA0C30DB15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		49F257BA71BDB0510E40C7CA0C30DB15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		584A2220DB5751949E071E76A3847835 /* HSPAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HSPAnalytics-dummy.m"; sourceTree = "<group>"; };
 		691B4DC8EC8DA1DD0E742E49759BE893 /* Pods-HSPAnalytics_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSPAnalytics_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		69E778A1EE8B9258FCCA8E19BC943BF6 /* HSPAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSPAnalytics.release.xcconfig; sourceTree = "<group>"; };
-		7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods-HSPAnalytics_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HSPAnalytics_Example"; path = Pods_HSPAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods_HSPAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HSPAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84180C4D2D528C4300F8F1C5 /* EventDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDataModel.swift; path = HSPAnalytics/Classes/EventDataModel.swift; sourceTree = "<group>"; };
 		852B3B52C04FB0876519B67EDE3851A9 /* Pods-HSPAnalytics_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HSPAnalytics_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8B415F771B352C1968519294BC6BDAF9 /* Pods-HSPAnalytics_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HSPAnalytics_Example-dummy.m"; sourceTree = "<group>"; };
-		8E536A95A815E2FAF54ED1151FC5647B /* HSPAnalytics */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HSPAnalytics; path = HSPAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E536A95A815E2FAF54ED1151FC5647B /* HSPAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSPAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9336D445174144585188FABF96E7483F /* HSPAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HSPAnalytics.debug.xcconfig; sourceTree = "<group>"; };
 		9950636BD7716A70EAE3BD9280CEEDAC /* Pods-HSPAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HSPAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A720F80CCCF5CC068447DC4C5AF7FED7 /* HSPAnalytic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSPAnalytic.swift; path = HSPAnalytics/Classes/HSPAnalytic.swift; sourceTree = "<group>"; };
 		CCAFBB1ABC2F858CFACFD679CAD9DFF4 /* Pods-HSPAnalytics_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HSPAnalytics_Example.modulemap"; sourceTree = "<group>"; };
-		CE3FF7EE4A2AB6728BCFEE301B6D55DA /* HSPAnalytics.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HSPAnalytics.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CE3FF7EE4A2AB6728BCFEE301B6D55DA /* HSPAnalytics.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HSPAnalytics.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D4F7B86E8997D5186B61318739CFACA3 /* Pods-HSPAnalytics_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HSPAnalytics_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D50DBB71B9C341F3F5388ACA219BA782 /* Pods-HSPAnalytics_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HSPAnalytics_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DC52396CEBE535F6D17513A2D44195AB /* APIClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = HSPAnalytics/Classes/APIClient.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				DC52396CEBE535F6D17513A2D44195AB /* APIClient.swift */,
 				48DAE7EC0786C18F36E3CFFAE317E696 /* EventRequest.swift */,
 				A720F80CCCF5CC068447DC4C5AF7FED7 /* HSPAnalytic.swift */,
+				84180C4D2D528C4300F8F1C5 /* EventDataModel.swift */,
 				5DD47234D9B06183D15EC0A3BB078C10 /* Pod */,
 				519D993F82F69271C941FFC2D7C26B23 /* Support Files */,
 			);
@@ -129,9 +132,9 @@
 		392A25EC550805660881E1598CC73E99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E536A95A815E2FAF54ED1151FC5647B /* HSPAnalytics */,
-				7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods-HSPAnalytics_Example */,
-				0BC613DBF1A165C8C193E7F3CA19FA97 /* Pods-HSPAnalytics_Tests */,
+				8E536A95A815E2FAF54ED1151FC5647B /* HSPAnalytics.framework */,
+				7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods_HSPAnalytics_Example.framework */,
+				0BC613DBF1A165C8C193E7F3CA19FA97 /* Pods_HSPAnalytics_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,7 +278,7 @@
 			);
 			name = "Pods-HSPAnalytics_Tests";
 			productName = Pods_HSPAnalytics_Tests;
-			productReference = 0BC613DBF1A165C8C193E7F3CA19FA97 /* Pods-HSPAnalytics_Tests */;
+			productReference = 0BC613DBF1A165C8C193E7F3CA19FA97 /* Pods_HSPAnalytics_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8AC1D6D41A1FA68F0DC242066E0F06B1 /* HSPAnalytics */ = {
@@ -293,7 +296,7 @@
 			);
 			name = HSPAnalytics;
 			productName = HSPAnalytics;
-			productReference = 8E536A95A815E2FAF54ED1151FC5647B /* HSPAnalytics */;
+			productReference = 8E536A95A815E2FAF54ED1151FC5647B /* HSPAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8F4ADE94B4AAB1ABCEC480115B711D90 /* Pods-HSPAnalytics_Example */ = {
@@ -312,7 +315,7 @@
 			);
 			name = "Pods-HSPAnalytics_Example";
 			productName = Pods_HSPAnalytics_Example;
-			productReference = 7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods-HSPAnalytics_Example */;
+			productReference = 7E1C2FC6D83F95266A7A4C6881C9D6F8 /* Pods_HSPAnalytics_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -333,8 +336,6 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			minimizedProjectReferenceProxies = 0;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 392A25EC550805660881E1598CC73E99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +380,7 @@
 				D6E7A9A30748DE6FA737F66A9D55885F /* EventRequest.swift in Sources */,
 				45B743688F543BEE09A98FA0288B878B /* HSPAnalytic.swift in Sources */,
 				48A8CEC2E4E7BB02EB02F7D197904D28 /* HSPAnalytics-dummy.m in Sources */,
+				84180C4E2D528C4300F8F1C5 /* EventDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,8 +686,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

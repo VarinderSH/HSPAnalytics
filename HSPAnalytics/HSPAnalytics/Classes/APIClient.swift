@@ -22,14 +22,15 @@ class APIClient {
             completion(false)
             return
         }
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: url, timeoutInterval: Double.infinity)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         headers.forEach { element in
             request.addValue(element.value, forHTTPHeaderField: element.key)
         }
-        if let jsonData = event.toJSONData() {
-            request.httpBody = jsonData
+        if let parameters = event.toJSONString() {
+            let postData = parameters.data(using: .utf8)
+            request.httpBody = postData
             let task = URLSession.shared.dataTask(with: request) { _, response, error in
                 if let error = error {
                     print("Error sending event: \(error)")

@@ -18,6 +18,52 @@ public struct AnalyticConfig {
 }
 
 public class HSPAnalytic {
+    private var config: AnalyticConfig?
+    public static let shared = HSPAnalytic()
+    private var apiClient: APIClient?
+    private init() {}
+
+    private var headers: [String: String]? {
+        guard let orgToken = config?.orgToken else { return nil }
+        return ["orgToken": orgToken]
+    }
+
+    public func startAnalytic(config: AnalyticConfig) {
+        self.config = config
+        self.apiClient = APIClient(baseURL: config.api)
+    }
+
+    public func logEvent(eventType: EventType, eventData: EventDataModel) {
+        apiClient?.sendEvent(event: EventRequest(eventType: eventType, eventData: eventData), headers: headers ?? [:]) { success in
+            debugPrint(success ? "Event logged successfully: \(eventType.rawValue)" : "Failed to log event: \(eventType.rawValue)")
+        }
+    }
+    
+    public func logScreenView(eventData: EventDataModel) {
+        apiClient?.sendEvent(event: EventRequest(eventType: .screenView, eventData: eventData), headers: headers ?? [:]) { success in
+            debugPrint(success ? "Event logged successfully: \(EventType.screenView.rawValue)" : "Failed to log event: \(EventType.screenView.rawValue)")
+        }
+    }
+    
+    public func logPurchaseEvent(eventData: EventDataModel) {
+        apiClient?.sendEvent(event: EventRequest(eventType: .purchase, eventData: eventData), headers: headers ?? [:]) { success in
+            debugPrint(success ? "Event logged successfully: \(EventType.screenView.rawValue)" : "Failed to log event: \(EventType.screenView.rawValue)")
+        }
+    }
+    
+    public func logExifEvent(eventData: EventDataModel) {
+        apiClient?.sendEvent(event: EventRequest(eventType: ., eventData: eventData), headers: headers ?? [:]) { success in
+            debugPrint(success ? "Event logged successfully: \(EventType.screenView.rawValue)" : "Failed to log event: \(EventType.screenView.rawValue)")
+        }
+    }
+}
+
+
+
+
+
+/*
+public class HSPAnalytic {
     
     private var config: AnalyticConfig?
     
@@ -161,3 +207,4 @@ public class HSPAnalytic {
         logEvent(eventType: .notificationInteraction, eventData: data)
     }
 }
+*/

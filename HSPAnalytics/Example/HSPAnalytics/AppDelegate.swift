@@ -8,15 +8,24 @@
 
 import UIKit
 import HSPAnalytics
+struct AppEventConfig {
+    static let ordId = "1958fe9e-d5c7-11ed-afa1-0242ac120002"
+    static let orgToken = "eyJvcmdJZCI6IDY2ODQyMiwgImVudiI6ICJQcm9kdWN0aW9uIiwgImNsaWVudElkIjogImU2YjhhYzUzLThhMGEtNGJmYS1iYjdlLTEzZTYzMjE3YTkxZiIsICJjbGllbnRTZWNyZXQiOiAiMTQ5YWQ3MDUtODM3ZC00NjhkLTg1M2YtMDQ3NzI4YTg1NzNhIiwgInZlcnNpb24iOiAidjEifQ=="
+    static let api = "https://hsp-analytic-kwdph.ondigitalocean.app/hsp-analytic-v2/hsp-event"
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        HSPAnalytic.shared.startAnalytic(config: AnalyticConfig(api: AppEventConfig.api, orgToken: AppEventConfig.orgToken))
+        let logEvent = EventDataModel(screenName: "jkjk")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            HSPAnalytic.shared.logEvent(eventType: .screenView, eventData: logEvent)
+        }
         return true
     }
 

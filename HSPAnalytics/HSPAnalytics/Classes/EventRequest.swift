@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum EventType: String {
+public enum EventType: String, Codable {
     case appCrash = "APP_CRASH"
     case appLaunch = "APP_LAUNCH"
     case featureInteraction = "FEATURE_INTERACTION"
@@ -21,51 +21,34 @@ public enum EventType: String {
 }
 
 public struct EventRequest: Codable {
-    let eventType: String
-    let eventData: [String: Any]
-    let timestamp: String
-    
-    init(eventType: EventType, eventData: [String: Any]) {
-        self.eventType = eventType.rawValue
+    let eventType: EventType
+    let eventData: EventDataModel
+
+    init(eventType: EventType, eventData: EventDataModel) {
+        self.eventType = eventType
         self.eventData = eventData
-        self.timestamp = ISO8601DateFormatter().string(from: Date())
     }
-    
+
     enum CodingKeys: String, CodingKey {
-        case eventType, eventData, timestamp
+        case eventType, eventData
     }
-    
+
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(eventType, forKey: .eventType)
-        try container.encode(timestamp, forKey: .timestamp)
-        
-        let jsonData = try JSONSerialization.data(withJSONObject: eventData, options: [])
-        let jsonString = String(data: jsonData, encoding: .utf8) ?? "{}"
-        try container.encode(jsonString, forKey: .eventData)
+        try container.encode(eventData, forKey: .eventData)
     }
-    
+
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        eventType = try container.decode(String.self, forKey: .eventType)
-        timestamp = try container.decode(String.self, forKey: .timestamp)
-        
-        let jsonString = try container.decode(String.self, forKey: .eventData)
-        if let data = jsonString.data(using: .utf8),
-           let jsonObject = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-            eventData = jsonObject ?? [:]
-        } else {
-            eventData = [:]
-        }
+        eventType = try container.decode(EventType.self, forKey: .eventType)
+        eventData = try container.decode(EventDataModel.self, forKey: .eventData)
     }
-    
-    func toJSONData() -> Data? {
-        let encoder = JSONEncoder()
-//        encoder.outputFormatting = .prettyPrinted // Optional for readability
-        
+
+    func toJSONString() -> String? {
         do {
-            return try encoder.encode(self)
-//            return String(data: jsonData, encoding: .utf8)
+            let jsonData = try JSONEncoder().encode(self)
+            return String(data: jsonData, encoding: .utf8)
         } catch {
             print("Failed to convert EventRequest to JSON:", error)
             return nil
