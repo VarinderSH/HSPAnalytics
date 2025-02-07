@@ -50,12 +50,6 @@ public class HSPAnalytic {
             debugPrint(success ? "Event logged successfully: \(EventType.screenView.rawValue)" : "Failed to log event: \(EventType.screenView.rawValue)")
         }
     }
-    
-    public func logExifEvent(eventData: EventDataModel) {
-        apiClient?.sendEvent(event: EventRequest(eventType: ., eventData: eventData), headers: headers ?? [:]) { success in
-            debugPrint(success ? "Event logged successfully: \(EventType.screenView.rawValue)" : "Failed to log event: \(EventType.screenView.rawValue)")
-        }
-    }
 }
 
 
