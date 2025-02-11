@@ -18,6 +18,7 @@ public enum EventType: String, Codable {
     case subscription = "SUBSCRIPTION"
     case trial = "TRIAL_STARTED"
     case unsubscribe = "UNSUBSCRIBE"
+    case exif = "EXIF"
 }
 
 public struct EventRequest: Codable {

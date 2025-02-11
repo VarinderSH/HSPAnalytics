@@ -8,39 +8,47 @@
 import Foundation
 
 public struct EventDataModel: Codable {
-    let sessionId: String?
-    let appVersion: String?
-    let deviceType: String?
-    let userId: String?
-    let referrer: String?
-    let trialId: String?
-    let trialPlan: String?
-    let startDate: String?
-    let endDate: String?
-    let convertedToPaid: Bool?
-    let transactionId: String?
-    let itemId: String?
-    let itemName: String?
-    let price: Double?
-    let currency: String?
-    let screenName: String?
-    let entryPoint: String?
-    let exitPoint: String?
-    let timeSpent: Int?
-    let featureName: String?
-    let interactionType: String?
-    let subscriptionId: String?
-    let subscriptionPlan: String?
-    let eventType: String?
-    let amount: Double?
-    let cancellationDate: String?
-    let reason: String?
-    let refundProcessed: Bool?
-    let feedbackType: String?
-    let comment: String?
-    let notificationId: String?
-    let action: String?
-
+    var sessionId: String?
+    var appVersion: String?
+    var deviceType: String?
+    var userId: String?
+    var referrer: String?
+    var trialId: String?
+    var trialPlan: String?
+    var startDate: String?
+    var endDate: String?
+    var convertedToPaid: Bool?
+    var transactionId: String?
+    var itemId: String?
+    var itemName: String?
+    var price: Double?
+    var currency: String?
+    var screenName: String?
+    var entryPoint: String?
+    var exitPoint: String?
+    var timeSpent: Int?
+    var featureName: String?
+    var interactionType: String?
+    var subscriptionId: String?
+    var subscriptionPlan: String?
+    var eventType: String?
+    var amount: Double?
+    var cancellationDate: String?
+    var reason: String?
+    var refundProcessed: Bool?
+    var feedbackType: String?
+    var comment: String?
+    var notificationId: String?
+    var action: String?
+    var orgId: String?
+    var country: String?
+    var misc: String?
+    var appId: String?
+    var latitude: String?
+    var longitude: String?
+    var cameraModel: String?
+    var dateTimeOriginal: String?
+    
     public init(
         sessionId: String? = nil,
         appVersion: String? = nil,
@@ -73,7 +81,15 @@ public struct EventDataModel: Codable {
         feedbackType: String? = nil,
         comment: String? = nil,
         notificationId: String? = nil,
-        action: String? = nil
+        action: String? = nil,
+        orgId: String? = nil,
+        country: String? = nil,
+        misc: String? = nil,
+        appId: String? = nil,
+        latitude: String? = nil,
+        longitude: String? = nil,
+        cameraModel: String? = nil,
+        dateTimeOriginal: String? = nil
     ) {
         self.sessionId = sessionId
         self.appVersion = appVersion
@@ -107,5 +123,13 @@ public struct EventDataModel: Codable {
         self.comment = comment
         self.notificationId = notificationId
         self.action = action
+        self.orgId = orgId
+        self.country = country
+        self.misc = misc
+        self.appId = appId
+        self.latitude = latitude
+        self.longitude = longitude
+        self.cameraModel = cameraModel
+        self.dateTimeOriginal = dateTimeOriginal
     }
 }
